@@ -79,13 +79,13 @@ export function ShowCoinBalance({
 
         // Create mainnet instance for ENS resolution
         const mainnetAlchemy = new Alchemy({
-          apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY,
+          apiKey: process.env.NEXT_PUBLIC_ALCHEMY_KEY,
           network: Network.ETH_MAINNET,
         });
 
         // Create target network instance for token balance
         const targetAlchemy = new Alchemy({
-          apiKey: process.env.NEXT_PUBLIC_ALCHEMY_API_KEY,
+          apiKey: process.env.NEXT_PUBLIC_ALCHEMY_KEY,
           network: finalNetwork,
         });
 

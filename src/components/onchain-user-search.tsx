@@ -155,7 +155,7 @@ export function OnchainUserSearch({
   const { sdk, isSDKLoaded, isMiniApp } = useMiniAppSdk();
   // Create viem client for ENS resolution
   const publicClient = React.useMemo(() => {
-    const alchemyKey = alchemyApiKey || process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
+    const alchemyKey = alchemyApiKey || process.env.NEXT_PUBLIC_ALCHEMY_KEY;
     const rpcUrl = alchemyKey ? getAlchemyEndpoint(1, alchemyKey) : undefined;
 
     return createPublicClient({

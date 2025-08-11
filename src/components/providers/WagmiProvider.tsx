@@ -12,7 +12,7 @@ import { farcasterMiniApp } from "@farcaster/miniapp-wagmi-connector";
 import { DaimoPayProvider, getDefaultConfig } from "@daimo/pay";
 import { PROJECT_TITLE } from "~/lib/constants";
 
-const alchemyApiKey = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
+const alchemyApiKey = process.env.NEXT_PUBLIC_ALCHEMY_KEY;
 
 export const config = createConfig(
   getDefaultConfig({

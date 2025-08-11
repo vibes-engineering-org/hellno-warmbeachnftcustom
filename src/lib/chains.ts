@@ -48,7 +48,7 @@ export function getChainById(chainId: number): Chain {
  * Falls back to public RPC if no Alchemy key is available
  */
 export function getTransport(chainId: number) {
-  const alchemyKey = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
+  const alchemyKey = process.env.NEXT_PUBLIC_ALCHEMY_KEY;
   const config = SUPPORTED_CHAINS.find((c) => c.id === chainId);
 
   if (config?.alchemyPrefix && alchemyKey) {
